@@ -1,0 +1,50 @@
+.header {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    min-height: 85px;
+    background-color: $bg-base-color;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__offices {
+        display: flex;
+        justify-content: space-between;
+        color: $txt-dark-color;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 18px;
+    }
+
+    &__flag {
+        margin-right: 10px;
+        height: 21px;
+        width: 28px;
+    }
+
+    &__country {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 14px;
+    }
+
+    &__phone {
+        text-decoration: none;
+        color: $txt-dark-color;
+        &:hover {
+            color: $txt-dark-color;
+            text-decoration: underline;
+        }
+    }
+
+    &__email {
+        text-decoration: none;
+        color: $txt-dark-color;
+        &:hover {
+            color: $txt-dark-color;
+            text-decoration: underline;
+        }
+    }
+}
