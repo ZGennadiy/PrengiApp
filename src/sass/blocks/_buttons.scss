@@ -1,0 +1,18 @@
+.button {
+    width: 241px;
+    height: 60px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.07);
+    background-color: #00c2f0;
+    border: none;
+    border-radius: 5px;
+    color: $txt-light-color;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+        &:hover {
+            box-shadow: 0 0 7px rgb(0, 0, 0);
+            background-color: #00c0f0c5;
+        }
+}

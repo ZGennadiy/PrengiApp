@@ -4,3 +4,13 @@
      right: auto;
     }
 }
+
+@mixin menu-reset-ul-stule {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
