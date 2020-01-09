@@ -1,0 +1,12 @@
+.arrow {
+    width: 170px;
+    height: 50px;
+
+    &__left-side {
+        border-bottom: 1px solid black;
+    }
+
+    &__right-side {
+        border-bottom: 1px solid black;
+    }
+}
