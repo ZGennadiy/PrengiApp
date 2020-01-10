@@ -1,12 +1,31 @@
 .arrow {
-    width: 170px;
-    height: 50px;
-
-    &__left-side {
-        border-bottom: 1px solid black;
+    @include push-center-auto;
+    margin-top: 70px;
+    height: 2px; 
+    width: 170px; 
+    position: relative;
+    animation: spin 2s infinite linear;
+    &_second {
+        margin-top: 20px;
+    }
+    
+    &:before, 
+    &:after {
+        content: "";
+        height: 100%; 
+        width: 50%;
+        position: absolute; 
+        top: 0;
+        background: #ececec;
+    }
+    
+    &:before {
+        left: 0;
+        transform: skew(0deg, 30deg);
     }
 
-    &__right-side {
-        border-bottom: 1px solid black;
+    &:after {
+        right: 0;
+        transform: skew(0deg, -30deg);
     }
 }
