@@ -29,3 +29,10 @@
         transform: skew(0deg, -30deg);
     }
 }
+
+.slider {
+    &__tabs {
+        display: flex;
+        justify-content: space-between;
+    }
+}
