@@ -1,0 +1,67 @@
+.set-selection {
+    padding-top: 80px;
+    position: relative;
+    min-height: 580px;
+    color: $txt-light-color;
+
+    &__cloud {
+        padding-right: 82px;
+        width: 50%;
+        min-height: inherit;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -2;
+        background: url(../img/cloud.jpg) center center no-repeat;
+        text-align: right;
+        &:after {
+            content: "";
+            position: absolute;
+            width: 167px;
+            height: 167px;
+            background-color: $accent-color;
+            opacity: 0.3;
+            z-index: -1;
+        }
+
+    }
+
+    &__server {
+        padding-left: 82px;
+        width: 50%;
+        min-height: inherit;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -2;
+        background: url(../img/server.jpg) center center no-repeat;
+        &:after {
+            content: "";
+            top: 50%;
+            left: 45px;
+            position: absolute;
+            width: 167px;
+            height: 167px;
+            background-color: $accent-color;
+            opacity: 0.3;
+            z-index: -1;
+        }
+    }
+
+    &__name {
+        position: relative;
+        margin-top: 270px;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 22px;
+        text-transform: uppercase;        
+    }
+
+    &__descr {
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 26px;
+    }
+    
+}
