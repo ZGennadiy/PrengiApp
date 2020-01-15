@@ -4,4 +4,8 @@
     font-size: 30px;
     font-weight: 700;
     text-align: center;
+
+    &_black {
+        color: $txt-dark-alt-color;
+    }
 }
