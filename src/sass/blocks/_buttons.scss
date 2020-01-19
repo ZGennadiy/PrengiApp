@@ -11,8 +11,19 @@
     line-height: 30px;
     text-transform: uppercase;
     cursor: pointer;
-        &:hover {
-            box-shadow: 0 0 7px rgb(0, 0, 0);
-            background-color: #00c0f0c5;
-        }
+    &:hover {
+        box-shadow: 0 0 7px rgb(0, 0, 0);
+        background-color: #00c0f0c5;
+    }
+
+    &_mt {
+        margin-top: 30px;
+    }
+
+    &_submit {
+        display: block;
+        text-align: center;
+        margin: 20px auto 0 auto;
+
+    }
 }

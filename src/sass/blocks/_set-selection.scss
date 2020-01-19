@@ -5,7 +5,7 @@
     color: $txt-light-color;
 
     &__cloud {
-        padding-right: 82px;
+        padding-right: 7%;
         width: 50%;
         min-height: inherit;
         position: absolute;
@@ -17,6 +17,8 @@
         &:after {
             content: "";
             position: absolute;
+            top: 40%;
+            right: 7%;
             width: 167px;
             height: 167px;
             background-color: $accent-color;
@@ -27,7 +29,7 @@
     }
 
     &__server {
-        padding-left: 82px;
+        padding-left: 7%;
         width: 50%;
         min-height: inherit;
         position: absolute;
@@ -37,8 +39,8 @@
         background: url(../img/server.jpg) center center no-repeat;
         &:after {
             content: "";
-            top: 50%;
-            left: 45px;
+            top: 40%;
+            left: 7%;
             position: absolute;
             width: 167px;
             height: 167px;
@@ -50,7 +52,7 @@
 
     &__name {
         position: relative;
-        margin-top: 270px;
+        margin-top: 50%;
         font-size: 30px;
         font-weight: 700;
         line-height: 22px;

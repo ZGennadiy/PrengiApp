@@ -1,0 +1,61 @@
+.footer {
+    
+    padding-top: 50px;
+    min-height: 500px;
+    background-color: #0082a1;
+    color: $txt-light-color;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 19px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    &__company {
+        flex-basis: 30%;
+    }
+
+    &__logo {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    &__menu {
+        width: fit-content;
+        margin: 0;
+        padding-left: 0;
+        list-style: none;
+        margin-left: 90px;
+        
+    }
+    
+    &__menu-title {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 26px;
+    }
+    
+    &__menu-item {
+        line-height: 26px;
+    }
+    &__menu-link {
+        color: $txt-light-color;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+
+    }
+
+    &__copywrite {
+        margin-top: 45px;
+        height: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top: 1px solid $txt-light-color;
+
+    }
+}
