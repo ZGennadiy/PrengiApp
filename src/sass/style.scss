@@ -16,6 +16,11 @@
     &_height-section {
         min-height: inherit;
     }
+
+    @media (max-width: 1200px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 @import 'blocks/header';

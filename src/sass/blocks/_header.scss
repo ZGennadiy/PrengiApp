@@ -1,21 +1,102 @@
 .header {
     padding-top: 20px;
     padding-bottom: 15px;
-    min-height: 85px;
     background-color: $bg-base-color;
+    position: relative;
+
+    &__toggle {
+        display: none;
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center; 
+        position: relative;
+        height: 26px;
+        cursor: pointer;
+        z-index: 1;
+        color: $txt-dark-color;
+
+        @media (min-width: 1200px) {
+            display: none;
+        }
+    }
+
+    &__hamburger,
+    &__hamburger::before,
+    &__hamburger::after {
+        display: block;
+        position: absolute;
+        width: 26px;
+        height: 2px;
+        background-color: $accent-color;
+        transition-duration: .25s;
+    }
+
+    &__title {
+        position: absolute;
+        left: 36px;
+        color: $txt-dark-color;
+        font-weight: 400;
+    }
+
+    &__hamburger::before {
+        content: '';
+        top: -8px;
+    }
+
+    &__hamburger::after {
+        content: '';
+        top: 8px;
+    }
+
+    &__toggle:checked ~ &__btn > &__hamburger {
+        transform: rotate(45deg);
+    }
+
+    &__toggle:checked ~ &__btn > &__hamburger::before {
+        top: 0;
+        transform: rotate(0);
+    }
+
+    &__toggle:checked ~ &__btn > &__hamburger::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+
+    &__toggle:checked ~ &__btn > &__title {
+        color: $accent-color;
+    }
+
+    &__toggle:checked ~ &__wrapper {
+        display: flex;
+    }
 
     &__wrapper {
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        @media (max-width: 1199px) {
+            display: none;
+            justify-content: left;
+        }
     }
 
     &__offices {
+        margin-right: 10px;
+        margin-left: 10px;
         display: flex;
-        justify-content: space-between;
         color: $txt-dark-color;
         font-size: 12px;
         font-weight: 300;
         line-height: 18px;
+
+        @media (max-width: 1199px) {
+            width: 230px;
+            margin-top: 20px;
+        }
+
     }
 
     &__flag {
