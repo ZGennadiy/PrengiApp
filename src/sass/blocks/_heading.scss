@@ -5,6 +5,10 @@
     font-weight: 700;
     text-align: center;
 
+    @media (max-width: 700px) {
+        font-size: 24px;
+    }
+
     &_black {
         color: $txt-dark-alt-color;
     }

@@ -3,6 +3,7 @@
     padding-bottom: 15px;
     background-color: $bg-base-color;
     position: relative;
+    transition-duration: .25s;
 
     &__toggle {
         display: none;

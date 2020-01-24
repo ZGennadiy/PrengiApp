@@ -16,6 +16,13 @@
         background-color: #00c0f0c5;
     }
 
+    &_center {
+        @media (max-width: 800px) {
+            display: block;
+            @include push-center-auto;
+        }
+    }
+
     &_mt {
         margin-top: 30px;
     }
