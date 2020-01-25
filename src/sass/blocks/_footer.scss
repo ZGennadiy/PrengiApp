@@ -8,13 +8,31 @@
     font-weight: 300;
     line-height: 19px;
 
+    @media (max-width: 600px) {
+        padding-top: 30px;
+    }
+
     &__wrapper {
         display: flex;
         justify-content: flex-start;
+        @media (max-width: 850px) {
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        @media (max-width: 600px) {
+            flex-direction: column;
+            justify-content: flex-start;
+        }
     }
 
     &__company {
         flex-basis: 30%;
+
+        @media (max-width: 850px) {
+            margin-top: 40px;
+            order: 4;
+            flex-basis: 100%;
+        }
     }
 
     &__logo {
@@ -29,6 +47,13 @@
         list-style: none;
         margin-left: 90px;
         
+        @media (max-width: 950px) {
+            margin-left: 0;
+        }
+
+        @media (max-width: 600px) {
+            margin-top: 20px;
+        }
     }
     
     &__menu-title {
@@ -55,6 +80,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        text-align: center;
         border-top: 1px solid $txt-light-color;
 
     }

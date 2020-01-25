@@ -16,6 +16,11 @@
         position: relative;
         width: 302px;
         height: 302px;
+
+        @media (max-width: 400px) {
+            width: 280px;
+            height: 280px;
+        }
     }
 
     &__brd {

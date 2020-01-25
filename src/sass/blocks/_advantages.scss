@@ -7,12 +7,21 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+
+        @media (max-width: 800px) {
+            flex-direction: column;
+        }
     }
 
     &__item {
         position: relative;
         flex-basis: 50%;
         height: 355px;
+
+        @media (max-width: 500px) {
+            font-size: 16px;
+            height: 255px;
+        }
     }
 
     &__img {
@@ -39,6 +48,23 @@
         z-index: 1;
         &:hover {
             background-color: $accent-color;
+        }
+
+        @media (max-width: 900px) {
+            font-size: 20px;
+        }
+
+        @media (max-width: 500px) {
+            font-size: 16px;
+            height: 100px;
+        }
+    }
+
+    &__descr {
+        max-width: 70%;
+
+        @media (max-width: 500px) {
+            max-width: 90%;
         }
     }
 }

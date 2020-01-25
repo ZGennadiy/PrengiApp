@@ -13,6 +13,13 @@
         color: $txt-dark-alt-color;
     }
 
+    &_switch-color {
+        @media (max-width: 950px) {
+            color: $txt-dark-alt-color;
+            margin-bottom: 10px;
+        }
+    }
+
     &_mt {
         margin-top: 74px;
     }
