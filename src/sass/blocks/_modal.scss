@@ -1,14 +1,18 @@
 .overlay {
-    display: block;
+    display: none;
     position: fixed;
     top: 0;
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.56);
+
+    &__active {
+        display: block;
+    }
 }
 
 .modal {
-    display: block;
+    display: none;
     padding: 40px;
     position: absolute;
     top: 50%;
@@ -19,6 +23,10 @@
     border: 3px solid $accent-color;
     background-color: $bg-base-color;
     color: $txt-dark-color;
+
+    &__active {
+        display: block;
+    }
 
     @media (max-width: 430px) {
         width: 90%;

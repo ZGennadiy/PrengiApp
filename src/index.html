@@ -91,7 +91,7 @@
 
                 <h1 class="first-screen__title">Управляй своим бизнесом через Smartphone</h1>
                 <div class="first-screen__subtitle"><span class="first-screen__subtitle_normal-weight">PRENGI</span> - Платформа для прозрачного управления бизнесом</div>
-                <button class="button button_center">Получить доступ</button>
+                <button class="button button_center" id="openModal">Получить доступ</button>
 
                 <img src="img/smartphone-main.png" alt="Демонстрация интерфейса на смартфоне" class="first-screen__demo">
 
@@ -252,7 +252,7 @@
                     </div>
                     <h3 class="heading3 heading3_black heading3_mt">Приступить очень просто!<br>
                         Нужно получить доступ и начать работу!</h3>
-                    <button class="button button_mt">связаться с нами</button>
+                    <button class="button button_mt" id="openModal">связаться с нами</button>
                 </div>
             </div>
         </section>
@@ -303,9 +303,9 @@
             <div class="footer__copywrite">© Prengi Ink. 2008-2019 Все права защищены.</div>
         </div>
     </footer>
-    <!--<div class="overlay">
-         <div class="modal" id="consultation">
-            <div class="modal__close">&times;</div>
+    <div class="overlay" id="overlayModal"">
+         <div class="modal" data-modal="1" id="consultation">
+            <div class="modal__close" id="closeModal">&times;</div>
             <h2 class="modal__title">Просто заполните форму заявки</h2>
             <div class="modal__description">и мы перезвоним вам в течении 10 минут</div>
             <form action="#" class="feed-form feed-form_sm-center feed-form_mt25">
@@ -317,9 +317,9 @@
             </form>
         </div> 
 
-
+    <!--
         <div class="modal modal_mini" id="thanks">
-            <div class="modal__close">&times;</div>
+            <div class="modal__close" id="closeModal">&times;</div>
             <h2 class="modal__title">Спасибо за вашу заявку!</h2>
             <div class="modal__description">Наш менеджер свяжется с вами в ближайшее время!</div>
         </div>
